@@ -2,7 +2,7 @@
 
 # This file is part of C++-Builtem <http://github.com/ufal/cpp_builtem/>.
 #
-# Copyright 2014-2023 Institute of Formal and Applied Linguistics, Faculty
+# Copyright 2014-2025 Institute of Formal and Applied Linguistics, Faculty
 # of Mathematics and Physics, Charles University in Prague, Czech Republic.
 #
 # This Source Code Form is subject to the terms of the Mozilla Public
@@ -23,7 +23,7 @@ patch ../linux-gcc-4.9.2-eglibc-2.11/crosstool-ng-1.20.0/config/cc/gcc.in <<EOF
 @@ -36,6 +36,11 @@
  # Don't remove next line
  # CT_INSERT_VERSION_BELOW
- 
+
 +config CC_V_4_9_2
 +    bool
 +    prompt "4.9.2"
